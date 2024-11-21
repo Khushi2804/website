@@ -814,39 +814,48 @@ footer {
       transform: scale(1.02); /* Slightly enlarge the row on hover */
     }
 
-    .col {
-      flex-basis: 100%;
-      padding: 10px;
-      transition: background-color 0.3s, transform 0.3s;
-    }
+    /* General column styles */
+.col {
+  flex-basis: 100%;
+  padding: 10px;
+  transition: background-color 0.3s, transform 0.3s;
+}
 
-    .col:hover {
-      background-color: #333; /* Change background */
-      color: #5f8911; /* Change text color */
-      text-decoration: underline; /* Add underline on hover */
-    }
+/* Hover effect for the column block */
+.col:hover {
+  background-color: #333;
+  color: #5f8911;
+}
 
-    .col:active {
-      color: #5f8911; /* Change text color on click */
-      text-decoration: underline; /* Keep underline on click */
-    }
+/* Make the links in each column clickable */
+.col a {
+  color: #fff;
+  text-decoration: none;
+  display: block; /* Make the link span the full width */
+  transition: color 0.3s, text-decoration 0.3s;
+}
 
-    .col a {
-      color: #fff;
-      text-decoration: none;
-      margin: 0 5px;
-      transition: color 0.3s, text-decoration 0.3s;
-    }
+/* Hover effect for links */
+.col a:hover {
+  color: #5f8911;
+  text-decoration: underline;
+}
 
-    .col a:hover {
-      color: #5f8911; /* Change link color */
-      text-decoration: underline; /* Underline the link */
-    }
+/* Active (clicked) state for links */
+.col a:active {
+  color: #5f8911;
+  text-decoration: underline;
+}
 
-    .col a:active {
-      color: #5f8911; /* Keep link color on click */
-      text-decoration: underline; /* Keep underline on click */
-    }
+/* Responsive design for mobile */
+@media (max-width: 768px) {
+  .col {
+    flex-basis: 100%; /* Full width on small screens */
+    text-align: center; /* Center-align content */
+    padding: 20px;
+  }
+}
+
 
     .logo {
       width: 150px;
@@ -932,34 +941,7 @@ footer {
       .social-icons {
         justify-content: flex-start;
       }
-      .col:hover {
-      background-color: #333; /* Change background */
-      color: #5f8911; /* Change text color */
-      text-decoration: underline; /* Add underline on hover */
-    }
-
-    .col:active {
-      color: #5f8911; /* Change text color on click */
-      text-decoration: underline; /* Keep underline on click */
-    }
-
-    .col a {
-      color: #fff;
-      text-decoration: none;
-      margin: 0 5px;
-      transition: color 0.3s, text-decoration 0.3s;
-    }
-
-    .col a:hover {
-      color: #5f8911; /* Change link color */
-      text-decoration: underline; /* Underline the link */
-    }
-
-    .col a:active {
-      color: #5f8911; /* Keep link color on click */
-      text-decoration: underline; /* Keep underline on click */
-    }
-
+      
     }
 
     @media (min-width: 1024px) {
@@ -974,34 +956,7 @@ footer {
       .footer-links {
         font-size: 15px;
       }
-      .col:hover {
-      background-color: #333; /* Change background */
-      color: #5f8911; /* Change text color */
-      text-decoration: underline; /* Add underline on hover */
-    }
-
-    .col:active {
-      color: #5f8911; /* Change text color on click */
-      text-decoration: underline; /* Keep underline on click */
-    }
-
-    .col a {
-      color: #fff;
-      text-decoration: none;
-      margin: 0 5px;
-      transition: color 0.3s, text-decoration 0.3s;
-    }
-
-    .col a:hover {
-      color: #5f8911; /* Change link color */
-      text-decoration: underline; /* Underline the link */
-    }
-
-    .col a:active {
-      color: #5f8911; /* Keep link color on click */
-      text-decoration: underline; /* Keep underline on click */
-    }
-
+    
     }
 
     </style>
@@ -1216,70 +1171,71 @@ footer {
       </div>
     </div>
 
-    <footer>
-      <div class="row">
-        <div class="col">
+    <div class="row">
+      <div class="col">
+        <a href="#about">
           <img
             src="./assets/Logo transparent-01 1.svg"
             class="logo"
             alt="Growthawk Logo"
           />
-        </div>
-        <div class="col">
-          <p>About Us</p>
-          <p>Custom Software</p>
-          <p>Mobile</p>
-          <p>Ready to use Apps</p>
-        </div>
-        <div class="col">
-          <p style="cursor: pointer">Useful Links</p>
-          <p style="cursor: pointer">GDPR Compliance</p>
-          <p style="cursor: pointer">Data Security</p>
-          <p style="cursor: pointer">Terms and Conditions</p>
-          <p style="cursor: pointer">Refund</p>
-          <p style="cursor: pointer">Cancellation</p>
-          <p style="cursor: pointer">Blogs</p>
-          <p style="cursor: pointer">Anti Spam</p>
-          <p style="cursor: pointer">Legal</p>
-          <p style="cursor: pointer">Policy</p>
-        </div>
-        <div class="col">
-          <p>Support</p>
-          <p style="cursor: pointer">Contact Us</p>
-        </div>
+        </a>
       </div>
-
-      <hr
-        style="
-          border: none;
-          height: 2px;
-          background-color: #333;
-          width: 90%;
-          margin: 20px auto;
-        "
-      />
-
-      <div class="social-icons">
-        <a href="https://www.instagram.com" target="_blank"
-          ><img src="./assets/instagram.png" alt="Instagram"
-        /></a>
-        <a href="https://www.twitter.com" target="_blank"
-          ><img src="./assets/twitter (1).png" alt="Twitter"
-        /></a>
-        <a href="https://www.facebook.com" target="_blank"
-          ><img src="./assets/facebook.png" alt="Facebook"
-        /></a>
-        <a href="https://www.linkedin.com" target="_blank"
-          ><img src="./assets/linkedin.png" alt="LinkedIn"
-        /></a>
+      <div class="col">
+        <a href="#about"><p>About Us</p></a>
+        <a href="#software"><p>Custom Software</p></a>
+        <a href="#mobile"><p>Mobile</p></a>
+        <a href="#apps"><p>Ready to use Apps</p></a>
       </div>
-
-      <div class="footer-links">
-        <a href="#terms">Terms of Service</a> –
-        <a href="#privacy">Privacy Policy</a>
+      <div class="col">
+        <a href="#links"><p>Useful Links</p></a>
+        <a href="#gdpr"><p>GDPR Compliance</p></a>
+        <a href="#security"><p>Data Security</p></a>
+        <a href="#terms"><p>Terms and Conditions</p></a>
+        <a href="#refund"><p>Refund</p></a>
+        <a href="#cancellation"><p>Cancellation</p></a>
+        <a href="#blogs"><p>Blogs</p></a>
+        <a href="#spam"><p>Anti Spam</p></a>
+        <a href="#legal"><p>Legal</p></a>
+        <a href="#policy"><p>Policy</p></a>
       </div>
-
-      <div class="copyright">&copy; 2024 Growthawk. All Rights Reserved.</div>
-    </footer>
+      <div class="col">
+        <a href="#support"><p>Support</p></a>
+        <a href="#contact"><p>Contact Us</p></a>
+      </div>
+    </div>
+  
+    <hr
+      style="
+        border: none;
+        height: 2px;
+        background-color: #333;
+        width: 90%;
+        margin: 20px auto;
+      "
+    />
+  
+    <div class="social-icons">
+      <a href="https://www.instagram.com" target="_blank"
+        ><img src="./assets/instagram.png" alt="Instagram"
+      /></a>
+      <a href="https://www.twitter.com" target="_blank"
+        ><img src="./assets/twitter (1).png" alt="Twitter"
+      /></a>
+      <a href="https://www.facebook.com" target="_blank"
+        ><img src="./assets/facebook.png" alt="Facebook"
+      /></a>
+      <a href="https://www.linkedin.com" target="_blank"
+        ><img src="./assets/linkedin.png" alt="LinkedIn"
+      /></a>
+    </div>
+  
+    <div class="footer-links">
+      <a href="#terms">Terms of Service</a> –
+      <a href="#privacy">Privacy Policy</a>
+    </div>
+  
+    <div class="copyright">&copy; 2024 Growthawk. All Rights Reserved.</div>
+  </footer>
   </body>
 </html>
