@@ -809,6 +809,12 @@ footer:hover {
 .col:hover {
   background-color: #333; /* Change background */
   color: #5f8911; /* Change text color */
+  text-decoration: underline; /* Add underline on hover */
+}
+
+.col:active {
+  color: #5f8911; /* Change text color on click */
+  text-decoration: underline; /* Keep underline on click */
 }
 
 .col a {
@@ -823,7 +829,10 @@ footer:hover {
   text-decoration: underline; /* Underline the link */
 }
 
-
+.col a:active {
+  color: #5f8911; /* Keep link color on click */
+  text-decoration: underline; /* Keep underline on click */
+}
 .logo {
   width: 150px;
   height: auto;
