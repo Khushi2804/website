@@ -344,148 +344,173 @@
   text-align: center;
   transition: background-color 0.3s;
 }
+footer {
+      background-image: linear-gradient(
+        to bottom,
+        #5f8911 0%,
+        black 15%,
+        black 100%
+      );
+      color: #fff;
+      padding: 40px 0;
+      font-size: 13px;
+      line-height: 25px;
+      text-align: center;
+      transition: background-color 0.3s;
+    }
 
-footer:hover {
-  background-color: #444; /* Darken the footer background */
-}
+    footer:hover {
+      background-color: #444; /* Darken the footer background */
+    }
 
-.row {
-  width: 90%;
-  margin: auto;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: 20px;
-  transition: transform 0.3s;
-}
+    .row {
+      width: 90%;
+      margin: auto;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 20px;
+      transition: transform 0.3s;
+    }
 
-.row:hover {
-  transform: scale(1.02); /* Slightly enlarge the row on hover */
-}
+    .row:hover {
+      transform: scale(1.02); /* Slightly enlarge the row on hover */
+    }
 
-.col {
-  flex-basis: 100%;
-  padding: 10px;
-  transition: background-color 0.3s, transform 0.3s;
-}
+    .col {
+      flex-basis: 100%;
+      padding: 10px;
+      transition: background-color 0.3s, transform 0.3s;
+    }
 
-.col:hover {
-  background-color: #333; /* Change background */
-  color: #5f8911; /* Change text color */
-  text-decoration: underline; /* Add underline on hover */
-}
+    .col:hover {
+      background-color: #333; /* Change background */
+      color: #5f8911; /* Change text color */
+      text-decoration: underline; /* Add underline on hover */
+    }
 
-.col:active {
-  color: #5f8911; /* Change text color on click */
-  text-decoration: underline; /* Keep underline on click */
-}
+    .col:active {
+      color: #5f8911; /* Change text color on click */
+      text-decoration: underline; /* Keep underline on click */
+    }
 
-.col a {
-  color: #fff;
-  text-decoration: none;
-  margin: 0 5px;
-  transition: color 0.3s, text-decoration 0.3s;
-}
+    .col a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 5px;
+      transition: color 0.3s, text-decoration 0.3s;
+    }
 
-.col a:hover {
-  color: #5f8911; /* Change link color */
-  text-decoration: underline; /* Underline the link */
-}
+    .col a:hover {
+      color: #5f8911; /* Change link color */
+      text-decoration: underline; /* Underline the link */
+    }
 
-.col a:active {
-  color: #5f8911; /* Keep link color on click */
-  text-decoration: underline; /* Keep underline on click */
-}
+    .col a:active {
+      color: #5f8911; /* Keep link color on click */
+      text-decoration: underline; /* Keep underline on click */
+    }
 
+    .logo {
+      width: 150px;
+      height: auto;
+      transition: transform 0.3s;
+    }
 
+    .logo:hover {
+      transform: rotate(10deg) scale(1.1); /* Rotate and enlarge logo */
+    }
 
-.logo {
-  width: 150px;
-  height: auto;
-  transition: transform 0.3s;
-}
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 15px;
+      margin-top: 20px;
+      transition: gap 0.3s;
+    }
 
-.logo:hover {
-  transform: rotate(10deg) scale(1.1); /* Rotate and enlarge logo */
-}
+    .social-icons:hover {
+      gap: 20px; /* Increase the spacing between icons */
+    }
 
-.social-icons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 15px;
-  margin-top: 20px;
-  transition: gap 0.3s;
-}
+    .social-icons img {
+      cursor: pointer;
+      width: 40px;
+      height: 40px;
+      transition: transform 0.3s, filter 0.3s;
+    }
 
-.social-icons:hover {
-  gap: 20px; /* Increase the spacing between icons */
-}
+    .social-icons img:hover {
+      transform: scale(1.2); /* Enlarge icon */
+      filter: brightness(1.5); /* Brighten the image */
+    }
 
-.social-icons img {
-  cursor: pointer;
-  width: 40px;
-  height: 40px;
-  transition: transform 0.3s, filter 0.3s;
-}
+    .footer-links {
+      background-color: #000;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+      text-align: center;
+      padding: 10px;
+      transition: background-color 0.3s, color 0.3s;
+    }
 
-.social-icons img:hover {
-  transform: scale(1.2); /* Enlarge icon */
-  filter: brightness(1.5); /* Brighten the image */
-}
+    .footer-links:hover {
+      background-color: #333; /* Change background */
+      color: #5f8911; /* Change text color */
+    }
 
-.footer-links {
-  background-color: #000;
-  color: #fff;
-  font-family: Arial, sans-serif;
-  font-size: 14px;
-  text-align: center;
-  padding: 10px;
-  transition: background-color 0.3s, color 0.3s;
-}
+    .footer-links a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 5px;
+      transition: color 0.3s, text-decoration 0.3s;
+    }
 
-.footer-links:hover {
-  background-color: #333; /* Change background */
-  color: #5f8911; /* Change text color */
-}
+    .footer-links a:hover {
+      color: #5f8911; /* Change link color */
+      text-decoration: underline; /* Underline the link */
+    }
 
-.footer-links a {
-  color: #fff;
-  text-decoration: none;
-  margin: 0 5px;
-  transition: color 0.3s, text-decoration 0.3s;
-}
+    @media (max-width: 768px) {
+      .col {
+        flex-basis: 100%; /* Make each column take the full width */
+        text-align: center; /* Center-align text and content */
+        padding: 20px; /* Increase padding for better spacing */
+      }
 
-.footer-links a:hover {
-  color: #5f8911; /* Change link color */
-  text-decoration: underline; /* Underline the link */
-}
+      .social-icons {
+        flex-direction: column; /* Stack social icons vertically */
+        gap: 10px; /* Reduce gap between icons for smaller screens */
+      }
+    }
 
-@media (min-width: 768px) {
-  .col {
-    flex-basis: 45%;
-    text-align: left;
-  }
+    @media (min-width: 768px) {
+      .col {
+        flex-basis: 45%;
+        text-align: left;
+      }
 
-  .social-icons {
-    justify-content: flex-start;
-  }
-}
+      .social-icons {
+        justify-content: flex-start;
+      }
+    }
 
-@media (min-width: 1024px) {
-  .col {
-    flex-basis: 22%;
-  }
+    @media (min-width: 1024px) {
+      .col {
+        flex-basis: 22%;
+      }
 
-  footer {
-    padding: 60px 0;
-  }
+      footer {
+        padding: 60px 0;
+      }
 
-  .footer-links {
-    font-size: 15px;
-  }
-}
+      .footer-links {
+        font-size: 15px;
+      }
+    }
 
     </style>
   </head>
