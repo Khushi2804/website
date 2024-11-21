@@ -331,100 +331,146 @@
       }
 
       footer {
-        background-image: linear-gradient(
-          to bottom,
-          #5f8911 0%,
-          black 15%,
-          black 100%
-        );
-        color: #fff;
-        padding: 40px 0;
-        font-size: 13px;
-        line-height: 25px;
-        text-align: center;
-      }
+  background-image: linear-gradient(
+    to bottom,
+    #5f8911 0%,
+    black 15%,
+    black 100%
+  );
+  color: #fff;
+  padding: 40px 0;
+  font-size: 13px;
+  line-height: 25px;
+  text-align: center;
+  transition: background-color 0.3s;
+}
 
-      .row {
-        width: 90%;
-        margin: auto;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: flex-start;
-        justify-content: space-between;
-        gap: 20px;
-      }
+footer:hover {
+  background-color: #444; /* Darken the footer background */
+}
 
-      .col {
-        flex-basis: 100%;
-        padding: 10px;
-      }
+.row {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+  transition: transform 0.3s;
+}
 
-      .col p {
-        margin: 5px 0;
-      }
+.row:hover {
+  transform: scale(1.02); /* Slightly enlarge the row on hover */
+}
 
-      .logo {
-        width: 150px;
-        height: auto;
-      }
+.col {
+  flex-basis: 100%;
+  padding: 10px;
+  transition: background-color 0.3s, transform 0.3s;
+}
 
-      .social-icons {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 15px;
-        margin-top: 20px;
-      }
+.col:hover {
+  background-color: rgba(255, 255, 255, 0.1); /* Highlight the column */
+  transform: translateY(-5px); /* Slight lift */
+}
 
-      .social-icons img {
-        cursor: pointer;
-        width: 40px;
-        height: 40px;
-      }
+.col p {
+  margin: 5px 0;
+  transition: color 0.3s;
+}
 
-      .footer-links {
-        background-color: #000;
-        color: #fff;
-        font-family: Arial, sans-serif;
-        font-size: 14px;
-        text-align: center;
-        padding: 10px;
-      }
+.col p:hover {
+  color: #5f8911; /* Change text color on hover */
+}
 
-      .footer-links a {
-        color: #fff;
-        text-decoration: none;
-        margin: 0 5px;
-      }
+.logo {
+  width: 150px;
+  height: auto;
+  transition: transform 0.3s;
+}
 
-      .footer-links a:hover {
-        text-decoration: underline;
-      }
+.logo:hover {
+  transform: rotate(10deg) scale(1.1); /* Rotate and enlarge logo */
+}
 
-      @media (min-width: 768px) {
-        .col {
-          flex-basis: 45%;
-          text-align: left;
-        }
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-top: 20px;
+  transition: gap 0.3s;
+}
 
-        .social-icons {
-          justify-content: flex-start;
-        }
-      }
+.social-icons:hover {
+  gap: 20px; /* Increase the spacing between icons */
+}
 
-      @media (min-width: 1024px) {
-        .col {
-          flex-basis: 22%;
-        }
+.social-icons img {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s, filter 0.3s;
+}
 
-        footer {
-          padding: 60px 0;
-        }
+.social-icons img:hover {
+  transform: scale(1.2); /* Enlarge icon */
+  filter: brightness(1.5); /* Brighten the image */
+}
 
-        .footer-links {
-          font-size: 15px;
-        }
-      }
+.footer-links {
+  background-color: #000;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  text-align: center;
+  padding: 10px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.footer-links:hover {
+  background-color: #333; /* Change background */
+  color: #5f8911; /* Change text color */
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 5px;
+  transition: color 0.3s, text-decoration 0.3s;
+}
+
+.footer-links a:hover {
+  color: #5f8911; /* Change link color */
+  text-decoration: underline; /* Underline the link */
+}
+
+@media (min-width: 768px) {
+  .col {
+    flex-basis: 45%;
+    text-align: left;
+  }
+
+  .social-icons {
+    justify-content: flex-start;
+  }
+}
+
+@media (min-width: 1024px) {
+  .col {
+    flex-basis: 22%;
+  }
+
+  footer {
+    padding: 60px 0;
+  }
+
+  .footer-links {
+    font-size: 15px;
+  }
+}
+
     </style>
   </head>
   <body>
