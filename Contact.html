@@ -744,19 +744,23 @@ footer:hover {
   transition: background-color 0.3s, transform 0.3s;
 }
 
-.col  a:hover {
+.col:hover {
+  background-color: #333; /* Change background */
+  color: #5f8911; /* Change text color */
+}
+
+.col a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 5px;
+  transition: color 0.3s, text-decoration 0.3s;
+}
+
+.col a:hover {
   color: #5f8911; /* Change link color */
   text-decoration: underline; /* Underline the link */
 }
 
-.col p {
-  margin: 5px 0;
-  transition: color 0.3s;
-}
-
-.col p:hover {
-  color: #5f8911; /* Change text color on hover */
-}
 
 .logo {
   width: 150px;
